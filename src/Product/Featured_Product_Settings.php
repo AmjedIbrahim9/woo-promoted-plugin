@@ -2,7 +2,7 @@
 namespace WOOFP\Product;
 
 class Featured_Product_Settings {
-    public function init_hooks() {
+    public function __construct() {
         // Register a new section in the WooCommerce settings
         add_filter('woocommerce_get_sections_products', array($this, 'featured_product_add_section'));
 
